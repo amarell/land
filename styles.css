@@ -49,16 +49,23 @@ body {
 .circle {
   width: 8px;
   height: 8px;
-
   background-color: white;
   border-radius: 50%;
 }
 
 h1 {
   padding: 40px;
+  color: white;
+}
+
+h2 {
+  font-family: "Roboto Mono";
+  color: crimson;
+  font-weight: bold;
 }
 
 .main-container {
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +74,6 @@ h1 {
 
 p {
   text-align: justify;
-  margin: 10px;
   width: 70%;
 }
 
@@ -101,6 +107,10 @@ li:hover {
   cursor: pointer;
 }
 
+.about-me {
+  display: flex;
+}
+
 .homepage-link {
   font-family: "Roboto Mono";
   color: white;
@@ -112,6 +122,44 @@ li:hover {
   margin-left: 40px;
 }
 
+img {
+  width: 256px;
+  height: 256px;
+}
+
 .last-link {
   margin-right: 40px;
+}
+
+.small-screen-navbar {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .about-me > div {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .small-screen-navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  }
+
+  .small-screen-navbar > ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .navbar > ul {
+    display: none;
+  }
 }
