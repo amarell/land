@@ -1,0 +1,113 @@
+:root {
+  --main-bg-color: #100e1e;
+  --main-font-color: crimson;
+  --navbar-font: #100e1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: Roboto;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  top: 30vh;
+  left: 0px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  color: crimson;
+  align-items: center;
+  font-size: 40px;
+}
+
+.sidebar > a {
+  text-decoration: none;
+  margin: 10px;
+  color: white;
+}
+
+.vl {
+  border-left: 2px solid white;
+  height: 100px;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+
+  background-color: white;
+  border-radius: 50%;
+}
+
+h1 {
+  padding: 40px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  text-align: justify;
+  margin: 10px;
+  width: 70%;
+}
+
+.navbar {
+  z-index: 1;
+  background-color: crimson;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar > ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+li {
+  margin: 10px;
+  padding: 10px;
+  font-family: "Roboto Mono";
+  color: white;
+  font-weight: bold;
+}
+
+li:hover {
+  background-color: white;
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+.homepage-link {
+  font-family: "Roboto Mono";
+  color: white;
+  font-size: 1.3em;
+  text-decoration: none;
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40px;
+}
+
+.last-link {
+  margin-right: 40px;
+}
