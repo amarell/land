@@ -37,6 +37,10 @@ body {
   color: white;
 }
 
+.sidebar > a:hover {
+  color: crimson;
+}
+
 .vl {
   border-left: 2px solid white;
   height: 100px;
