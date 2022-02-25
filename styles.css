@@ -2,6 +2,7 @@
   --main-bg-color: #100e1e;
   --main-font-color: crimson;
   --navbar-font: #100e1e;
+  --light-slate: #ccd6f6;
 }
 
 * {
@@ -17,6 +18,16 @@ body {
 
 .content {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.small-screen-content {
+  display: none;
+}
+
+.footer {
+  display: none;
 }
 
 .sidebar {
@@ -28,13 +39,13 @@ body {
   flex-direction: column;
   color: crimson;
   align-items: center;
-  font-size: 40px;
+  font-size: 27px;
 }
 
 .sidebar > a {
   text-decoration: none;
   margin: 10px;
-  color: white;
+  color: var(--light-slate);
 }
 
 .sidebar > a:hover {
@@ -42,20 +53,42 @@ body {
 }
 
 .vl {
-  border-left: 2px solid white;
+  border-left: 2px solid var(--light-slate);
   height: 100px;
 }
 
 .circle {
   width: 8px;
   height: 8px;
-  background-color: white;
+  background-color: var(--light-slate);
   border-radius: 50%;
 }
 
-h1 {
-  padding: 40px;
-  color: white;
+.intro > h1 {
+  color: crimson;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 5em;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.intro > h2 {
+  font-family: "Roboto";
+  color: crimson;
+  font-weight: bold;
+}
+
+.intro > h4 {
+  font-family: "Roboto Mono";
+  font-size: 1.3em;
+  color: var(--light-slate);
 }
 
 h2 {
@@ -65,16 +98,22 @@ h2 {
 }
 
 .main-container {
-  margin-left: 200px;
+  margin-left: 85px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  height: calc(100vh - 60.8px);
 }
 
 p {
+  color: var(--light-slate);
+  margin-right: 100px;
   text-align: justify;
-  width: 70%;
+  min-width: 400px;
+  width: auto;
+  padding: 10px;
 }
 
 .navbar {
@@ -85,6 +124,7 @@ p {
   align-items: center;
   position: sticky;
   top: 0px;
+  width: 100vw;
 }
 
 .navbar > ul {
@@ -109,6 +149,12 @@ li:hover {
 
 .about-me {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me > div > h2 {
+  margin-left: 10px;
 }
 
 .homepage-link {
@@ -125,6 +171,8 @@ li:hover {
 img {
   width: 256px;
   height: 256px;
+  padding: 10px;
+  margin-right: 30px;
 }
 
 .last-link {
@@ -136,12 +184,30 @@ img {
 }
 
 @media only screen and (max-width: 700px) {
+  .content {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
   .about-me > div {
     display: none;
   }
 
+  h1 {
+    margin-right: 10px;
+  }
+
   .navbar {
     display: none;
+  }
+
+  .small-screen-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .small-screen-navbar {
@@ -157,6 +223,24 @@ img {
     list-style: none;
     display: flex;
     margin-left: auto;
+  }
+
+  .ss-about-me {
+    height: calc(100vh - 60.8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  p {
+    margin: 10px;
+    width: auto;
+  }
+
+  h2 {
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
 
   .navbar > ul {
