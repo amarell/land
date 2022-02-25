@@ -66,8 +66,6 @@ body {
 
 .intro > h1 {
   color: crimson;
-  margin-right: auto;
-  margin-left: auto;
   font-size: 5em;
 }
 
@@ -91,7 +89,7 @@ body {
   color: var(--light-slate);
 }
 
-h2 {
+.about-me > div > h2 {
   font-family: "Roboto Mono";
   color: crimson;
   font-weight: bold;
@@ -104,7 +102,6 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: calc(100vh - 60.8px);
 }
 
 p {
@@ -112,6 +109,7 @@ p {
   margin-right: 100px;
   text-align: justify;
   min-width: 400px;
+  max-width: 450px;
   width: auto;
   padding: 10px;
 }
@@ -141,20 +139,27 @@ li {
   font-weight: bold;
 }
 
-li:hover {
-  background-color: white;
-  color: var(--main-bg-color);
-  cursor: pointer;
-}
-
 .about-me {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: calc(100vh - 60.8px);
 }
 
 .about-me > div > h2 {
   margin-left: 10px;
+}
+
+.about-me-p {
+  max-width: 600px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60.8px);
 }
 
 .homepage-link {
@@ -181,6 +186,42 @@ img {
 
 .small-screen-navbar {
   display: none;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-link:hover {
+  color: var(--main-bg-color);
+}
+
+.navbar > ul > li:hover {
+  background-color: white;
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60.8px);
+}
+
+.contact > h2 {
+  font-family: "Roboto Mono";
+  color: crimson;
+  font-weight: bold;
+}
+
+.contact-list {
+  list-style: circle;
+}
+
+.contact-list > li {
+  font-size: 1.4em;
+  margin-left: 30px;
 }
 
 @media only screen and (max-width: 700px) {
