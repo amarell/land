@@ -190,7 +190,7 @@ body {
 }
 
 .programming-lang-i {
-  font-size: 5em;
+  font-size: 4em;
   margin-left: 15px;
   margin-top: 15px;
   font-family: "Roboto Mono";
@@ -263,6 +263,68 @@ body {
   margin-left: 40px;
 }
 
+#projects {
+  height: 60.8px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.projects-header {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-family: "Roboto Mono";
+  color: crimson;
+  font-weight: bold;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  width: 510px;
+  height: auto;
+}
+
+.project > h2 {
+  margin-left: 20px;
+  margin-top: 0px;
+  font-family: "Roboto Mono";
+  color: crimson;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.project > p {
+  max-width: 600px;
+  margin-left: 20px;
+  color: var(--light-slate);
+  margin-right: 100px;
+  text-align: justify;
+  min-width: 400px;
+  width: auto;
+  padding: 10px;
+}
+
+.project > i {
+  color: var(--light-slate);
+  cursor: pointer;
+  font-size: 2em;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+
+.project > i:hover {
+  color: crimson;
+}
+
+.project {
+  height: auto;
+}
+
 img {
   width: 256px;
   height: 256px;
@@ -301,6 +363,8 @@ img {
 }
 
 .contact > h2 {
+  margin-left: 10px;
+  margin-top: 20px;
   font-family: "Roboto Mono";
   color: crimson;
   font-weight: bold;
@@ -312,7 +376,7 @@ img {
 
 .contact-list > li {
   font-size: 1.2em;
-  margin-left: 30px;
+  margin-left: 40px;
   padding: 10px;
   font-family: "Roboto Mono";
   color: var(--light-slate);
