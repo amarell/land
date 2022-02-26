@@ -184,14 +184,61 @@ body {
   color: crimson;
 }
 
+.programming-languages-ul {
+  margin-left: 30px;
+  list-style: circle;
+}
+
+.programming-lang-i {
+  font-size: 5em;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-family: "Roboto Mono";
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.frontend > i {
+  font-size: 5em;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.frontend > h2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: crimson;
+}
+
+.frontend > ul {
+  margin-left: 30px;
+  list-style: circle;
+}
+
+.database > i {
+  font-size: 5em;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.database > h2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: crimson;
+}
+
+.database > ul {
+  margin-left: 30px;
+  list-style: circle;
+}
+
 .skill {
   color: var(--light-slate);
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  border: 1px solid var(--light-slate);
+  margin: 10px;
   border-radius: 5px;
-  height: calc(100vh - 250.8px);
+  height: auto;
   min-width: 510px;
   width: auto;
 }
@@ -268,7 +315,7 @@ img {
   margin-left: 30px;
   padding: 10px;
   font-family: "Roboto Mono";
-  color: white;
+  color: var(--light-slate);
   font-weight: bold;
 }
 
