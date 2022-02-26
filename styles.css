@@ -204,8 +204,10 @@ img {
 }
 
 .contact {
+  border: 1px solid orange;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: calc(100vh - 60.8px);
 }
 
