@@ -17,6 +17,7 @@ body {
 }
 
 .content {
+  width: calc(100vw-10px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,16 +105,6 @@ body {
   justify-content: center;
 }
 
-p {
-  color: var(--light-slate);
-  margin-right: 100px;
-  text-align: justify;
-  min-width: 400px;
-  max-width: 450px;
-  width: auto;
-  padding: 10px;
-}
-
 .navbar {
   z-index: 1;
   background-color: crimson;
@@ -122,7 +113,7 @@ p {
   align-items: center;
   position: sticky;
   top: 0px;
-  width: 100vw;
+  width: calc(100vw-10px);
 }
 
 .navbar > ul {
@@ -131,7 +122,7 @@ p {
   margin-left: auto;
 }
 
-li {
+.navbar-ul > li {
   margin: 10px;
   padding: 10px;
   font-family: "Roboto Mono";
@@ -140,6 +131,7 @@ li {
 }
 
 .about-me {
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,14 +144,65 @@ li {
 
 .about-me-p {
   max-width: 600px;
+  color: var(--light-slate);
+  margin-right: 100px;
+  text-align: justify;
+  min-width: 400px;
+  width: auto;
+  padding: 10px;
+}
+
+#skills {
+  height: 60.8px;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 60.8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  width: 78vw;
+}
+
+.actual-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-header {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-family: "Roboto Mono";
+  color: crimson;
+  font-weight: bold;
+}
+
+.programming-languages > h2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: crimson;
+}
+
+.skill {
+  color: var(--light-slate);
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid var(--light-slate);
+  border-radius: 5px;
+  height: calc(100vh - 250.8px);
+  min-width: 510px;
+  width: auto;
+}
+
+.skill-paragraph {
+  max-width: 600px;
+  color: var(--light-slate);
+  text-align: justify;
+  min-width: 400px;
+  width: auto;
+  padding: 10px;
 }
 
 .homepage-link {
@@ -204,7 +247,6 @@ img {
 }
 
 .contact {
-  border: 1px solid orange;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,8 +264,12 @@ img {
 }
 
 .contact-list > li {
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin-left: 30px;
+  padding: 10px;
+  font-family: "Roboto Mono";
+  color: white;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 700px) {
