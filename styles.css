@@ -522,11 +522,10 @@ img {
   .ss-skills {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     height: auto;
-    width: 90vw;
-    border: 1px solid gold;
+    width: 97vw;
   }
 
   .ss-actual-skills {
@@ -535,8 +534,6 @@ img {
   }
 
   .ss-skills-header {
-    position: absolute;
-    left: 10px;
     font-family: "Roboto Mono";
     color: crimson;
     font-weight: bold;
@@ -544,9 +541,8 @@ img {
 
   .ss-skill-paragraph {
     color: var(--light-slate);
-    margin-right: 10px;
     text-align: justify;
-    max-width: 400px;
+    max-width: 500px;
     width: auto;
     padding: 10px;
   }
@@ -558,7 +554,7 @@ img {
   }
 
   .ss-programming-languages-ul {
-    margin-left: 30px;
+    margin-left: 50px;
     list-style: circle;
   }
 
@@ -580,13 +576,13 @@ img {
   }
 
   .ss-frontend > h2 {
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 10px;
     color: crimson;
   }
 
   .ss-frontend > ul {
-    margin-left: 30px;
+    margin-left: 50px;
     list-style: circle;
   }
 
@@ -598,13 +594,13 @@ img {
   }
 
   .ss-database > h2 {
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 10px;
     color: crimson;
   }
 
   .ss-database > ul {
-    margin-left: 30px;
+    margin-left: 50px;
     list-style: circle;
   }
 
@@ -613,7 +609,7 @@ img {
     margin: 10px;
     border-radius: 5px;
     height: auto;
-    min-width: 510px;
+    min-width: 350px;
     width: auto;
   }
 
