@@ -28,7 +28,31 @@ body {
 }
 
 .footer {
-  display: none;
+  padding: 20px;
+  color: slateblue;
+  background-color: #0c0b18;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > h3 > a {
+  text-decoration: none;
+  color: crimson;
+  font-family: "Roboto Mono";
+}
+
+.footer-links > a {
+  text-decoration: none;
+  color: slateblue;
+  font-size: 1.4em;
+  padding: 2px;
+  margin-top: 3px;
+}
+
+.footer-links > a:hover {
+  color: crimson;
 }
 
 .sidebar {
