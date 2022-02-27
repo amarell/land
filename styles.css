@@ -449,6 +449,19 @@ img {
     margin-left: auto;
   }
 
+  .ss-navbar-ul > li {
+    margin: 10px;
+    padding: 10px;
+    font-family: "Roboto Mono";
+    color: white;
+    font-weight: bold;
+  }
+
+  .ss-navbar-ul > li:hover {
+    background-color: white;
+    color: var(--main-bg-color);
+  }
+
   .ss-about-me {
     height: calc(100vh - 60.8px);
     display: flex;
