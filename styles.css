@@ -462,12 +462,159 @@ img {
     color: var(--main-bg-color);
   }
 
+  .ss-about-me > div > h2 {
+    font-family: "Roboto Mono";
+    color: crimson;
+    font-weight: bold;
+  }
+
   .ss-about-me {
-    height: calc(100vh - 60.8px);
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .ss-about-me > div > h2 {
+    margin-left: 20px;
+  }
+
+  .ss-about-me-p {
+    max-width: 500px;
+    color: var(--light-slate);
+    margin-right: 10px;
+    text-align: justify;
+    min-width: 300px;
+    width: auto;
+    padding: 10px;
+  }
+
+  .ss-intro > h1 {
+    color: crimson;
+    font-size: 4em;
+    margin-left: 10px;
+  }
+
+  .ss-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+
+  .ss-intro > h2 {
+    font-family: "Roboto";
+    color: crimson;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .ss-intro > h4 {
+    font-family: "Roboto Mono";
+    font-size: 1.3em;
+    color: var(--light-slate);
+    margin-left: 10px;
+    margin-top: 90px;
+  }
+
+  .ss-skills {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    height: auto;
+    width: 90vw;
+    border: 1px solid gold;
+  }
+
+  .ss-actual-skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ss-skills-header {
+    position: absolute;
+    left: 10px;
+    font-family: "Roboto Mono";
+    color: crimson;
+    font-weight: bold;
+  }
+
+  .ss-skill-paragraph {
+    color: var(--light-slate);
+    margin-right: 10px;
+    text-align: justify;
+    max-width: 400px;
+    width: auto;
+    padding: 10px;
+  }
+
+  .ss-programming-languages > h2 {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: crimson;
+  }
+
+  .ss-programming-languages-ul {
+    margin-left: 30px;
+    list-style: circle;
+  }
+
+  .ss-programming-lang-i {
+    font-size: 4em;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--light-slate);
+  }
+
+  .ss-frontend > i {
+    font-size: 5em;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .ss-frontend > h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: crimson;
+  }
+
+  .ss-frontend > ul {
+    margin-left: 30px;
+    list-style: circle;
+  }
+
+  .ss-database > i {
+    font-size: 5em;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .ss-database > h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: crimson;
+  }
+
+  .ss-database > ul {
+    margin-left: 30px;
+    list-style: circle;
+  }
+
+  .ss-skill {
+    color: var(--light-slate);
+    margin: 10px;
+    border-radius: 5px;
+    height: auto;
+    min-width: 510px;
+    width: auto;
   }
 
   p {
