@@ -271,7 +271,6 @@ body {
   max-width: 600px;
   color: var(--light-slate);
   text-align: justify;
-  min-width: 400px;
   width: auto;
   padding: 10px;
 }
@@ -312,7 +311,8 @@ body {
 .projects-container {
   display: flex;
   flex-direction: column;
-  width: 510px;
+  min-width: 400px;
+  width: auto;
   height: auto;
 }
 
@@ -327,11 +327,8 @@ body {
 
 .project > p {
   max-width: 600px;
-  margin-left: 20px;
   color: var(--light-slate);
-  margin-right: 100px;
   text-align: justify;
-  min-width: 400px;
   width: auto;
   padding: 10px;
 }
@@ -674,6 +671,34 @@ body {
   .ss-project {
     height: auto;
     width: auto;
+  }
+
+  .ss-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60.8px);
+  }
+
+  .ss-contact > h2 {
+    margin-left: 20px;
+    font-family: "Roboto Mono";
+    color: crimson;
+    font-weight: bold;
+  }
+
+  .ss-contact-list {
+    list-style: circle;
+  }
+
+  .ss-contact-list > li {
+    font-size: 1.2em;
+    margin-left: 40px;
+    padding: 10px;
+    font-family: "Roboto Mono";
+    color: var(--light-slate);
+    font-weight: bold;
   }
 
   p {
