@@ -729,3 +729,15 @@ body {
     display: none;
   }
 }
+
+
+.typing-span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
