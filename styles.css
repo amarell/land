@@ -412,7 +412,7 @@ body {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 790px) {
   .content {
     display: none;
   }

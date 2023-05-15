@@ -1,9 +1,33 @@
 window.addEventListener('DOMContentLoaded', (_) => {
-
     const toggleTheme = () => {
+        const fontAwesomeIconOff = "fa-moon"
+        const fontAwesomeIconOn = "fa-sun"
+
         const root = document.documentElement;
         const newTheme = root.className === 'dark' ? 'light' : 'dark';
         root.className = newTheme;
+
+        if (window.innerWidth > 790) {
+		const icon = document.getElementById("light-icon");
+		icon.className = icon.className.replace(
+			newTheme === "light"
+				? fontAwesomeIconOn
+				: fontAwesomeIconOff,
+			newTheme === "light"
+				? fontAwesomeIconOff
+				: fontAwesomeIconOn
+		);
+	} else {
+		const icon = document.getElementById("light-icon-small");
+		icon.className = icon.className.replace(
+			newTheme === "light"
+				? fontAwesomeIconOn
+				: fontAwesomeIconOff,
+			newTheme === "light"
+				? fontAwesomeIconOff
+				: fontAwesomeIconOn
+		);
+	}
     }
 
     toggleTheme()
