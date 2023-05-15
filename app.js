@@ -45,12 +45,27 @@ window.addEventListener('DOMContentLoaded', (_) => {
     };
 
     const checkUsersSystemThemePreference = () => {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme("dark", true)
-        }  else {
-            setTheme("light", true)
-        }
-    }
+		if (
+			window.matchMedia &&
+			window.matchMedia("(prefers-color-scheme: dark)")
+				.matches
+		) {
+			setTheme("dark", true);
+		} else {
+			setTheme("light", true);
+		}
+    };
+
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener(
+		"change",
+		(event) => {
+			if (event.matches) {
+				setTheme("dark");
+			} else {
+				setTheme("light");
+			}
+		}
+    );
 
     const toggleTheme = () => {
         const root = document.documentElement;
