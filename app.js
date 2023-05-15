@@ -1,37 +1,65 @@
 window.addEventListener('DOMContentLoaded', (_) => {
-    const toggleTheme = () => {
-        const fontAwesomeIconOff = "fa-moon"
-        const fontAwesomeIconOn = "fa-sun"
-
+    const setTheme = (theme, first = false) => {
         const root = document.documentElement;
-        const newTheme = root.className === 'dark' ? 'light' : 'dark';
-        root.className = newTheme;
 
-        if (window.innerWidth > 790) {
-		const icon = document.getElementById("light-icon");
-		icon.className = icon.className.replace(
-			newTheme === "light"
-				? fontAwesomeIconOn
-				: fontAwesomeIconOff,
-			newTheme === "light"
-				? fontAwesomeIconOff
-				: fontAwesomeIconOn
-		);
-	} else {
-		const icon = document.getElementById("light-icon-small");
-		icon.className = icon.className.replace(
-			newTheme === "light"
-				? fontAwesomeIconOn
-				: fontAwesomeIconOff,
-			newTheme === "light"
-				? fontAwesomeIconOff
-				: fontAwesomeIconOn
-		);
-	}
+		const fontAwesomeIconOff = "fa-moon";
+		const fontAwesomeIconOn = "fa-sun";
+
+		if (window.innerWidth > 790) {
+			const icon = document.getElementById("light-icon");
+			if (first) {
+				icon.className =
+					theme === "light"
+						? `fas ${fontAwesomeIconOff}`
+						: `fas ${fontAwesomeIconOn}`;
+			} else {
+				icon.className = icon.className.replace(
+					theme === "light"
+						? fontAwesomeIconOn
+						: fontAwesomeIconOff,
+					theme === "light"
+						? fontAwesomeIconOff
+						: fontAwesomeIconOn
+				);
+			}
+		} else {
+			const icon =
+				document.getElementById("light-icon-small");
+			if (first) {
+				icon.className =
+					theme === "light"
+						? `fas ${fontAwesomeIconOff}`
+						: `fas ${fontAwesomeIconOn}`;
+			}
+			icon.className = icon.className.replace(
+				newTheme === "light"
+					? fontAwesomeIconOn
+					: fontAwesomeIconOff,
+				newTheme === "light"
+					? fontAwesomeIconOff
+					: fontAwesomeIconOn
+			);
+		}
+
+        root.className = theme;
+    };
+
+    const checkUsersSystemThemePreference = () => {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme("dark", true)
+        }  else {
+            setTheme("light", true)
+        }
     }
 
-    toggleTheme()
+    const toggleTheme = () => {
+        const root = document.documentElement;
+        const newTheme = root.className === 'dark' ? 'light' : 'dark';
 
+        setTheme(newTheme);
+    }
+
+    checkUsersSystemThemePreference();
     document.getElementById("switch-theme-button").addEventListener("click", toggleTheme);
     document.getElementById("switch-theme-button-small").addEventListener("click", toggleTheme);
 
