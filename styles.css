@@ -1,8 +1,19 @@
-:root {
+:root.dark {
   --main-bg-color: #100e1e;
   --main-font-color: crimson;
   --navbar-font: #100e1e;
   --light-slate: #ccd6f6;
+  --footer-bg: #0c0b18;
+  --footer-color: slateblue;
+}
+
+:root.light {
+    --main-bg-color: white;
+    --main-font-color: crimson;
+    --navbar-font: #100e1e;
+    --light-slate: black;
+    --footer-bg: rgb(208, 208, 208);
+    --footer-color: slateblue;
 }
 
 * {
@@ -29,8 +40,8 @@ body {
 
 .footer {
   padding: 20px;
-  color: slateblue;
-  background-color: #0c0b18;
+  color: var(--footer-color);
+  background-color: var(--footer-bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -449,6 +460,7 @@ body {
     font-family: "Roboto Mono";
     color: white;
     font-weight: bold;
+    cursor: pointer;
   }
 
   .ss-navbar-ul > li:hover {
