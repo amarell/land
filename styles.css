@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root.dark {
   --main-bg-color: #100e1e;
   --main-font-color: crimson;
@@ -5,6 +9,7 @@
   --light-slate: #ccd6f6;
   --footer-bg: #0c0b18;
   --footer-color: slateblue;
+  --navbar-hover:  #100e1e;
 }
 
 :root.light {
@@ -14,6 +19,7 @@
     --light-slate: black;
     --footer-bg: rgb(208, 208, 208);
     --footer-color: slateblue;
+    --navbar-hover:  #100e1e;
 }
 
 * {
@@ -25,6 +31,7 @@
 body {
   background-color: var(--main-bg-color);
   font-family: Roboto;
+  transition: 0.5s !important;
 }
 
 .content {
@@ -375,7 +382,7 @@ body {
 }
 
 .navbar-link:hover {
-  color: var(--main-bg-color);
+  color: var(--navbar-hover) !important;
 }
 
 .navbar > ul > li:hover {
