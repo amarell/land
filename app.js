@@ -117,10 +117,10 @@ window.addEventListener("DOMContentLoaded", (_) => {
 						: `fas ${fontAwesomeIconOn}`;
 			}
 			icon.className = icon.className.replace(
-				newTheme === "light"
+				theme === "light"
 					? fontAwesomeIconOn
 					: fontAwesomeIconOff,
-				newTheme === "light"
+				theme === "light"
 					? fontAwesomeIconOff
 					: fontAwesomeIconOn
 			);
