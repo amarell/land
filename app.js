@@ -26,7 +26,7 @@ const typingAnimation = () => {
 
 	// type one text in the typwriter
 	// keeps calling itself until the text is finished
-	function typeWriter(text, i, fnCallback) {
+	const typeWriter = (text, i, fnCallback) => {
 		// chekc if text isn't finished yet
 		if (i < text.length) {
 			// add next character to the element with the animation...
