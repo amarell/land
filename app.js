@@ -1,3 +1,7 @@
+const isSmallScreen = () => {
+    return window.innerWidth < 790;
+}
+
 const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
 	const { top, left, bottom, right } = el.getBoundingClientRect();
 	const { innerHeight, innerWidth } = window;
@@ -30,7 +34,9 @@ const typingAnimation = () => {
 		// chekc if text isn't finished yet
 		if (i < text.length) {
 			// add next character to the element with the animation...
-			document.querySelector("#typing-animation").innerHTML =
+            let typingAnimationElementId = isSmallScreen() ? "ss-typing-animation" : "typing-animation"
+
+			document.querySelector(`#${typingAnimationElementId}`).innerHTML =
 				text.substring(0, i + 1) +
 				'<span aria-hidden="true" class="typing-span"></span>';
 
@@ -90,7 +96,7 @@ window.addEventListener("DOMContentLoaded", (_) => {
 		const fontAwesomeIconOff = "fa-moon";
 		const fontAwesomeIconOn = "fa-sun";
 
-		if (window.innerWidth > 790) {
+		if (!isSmallScreen) {
 			const icon = document.getElementById("light-icon");
 			if (first) {
 				icon.className =
