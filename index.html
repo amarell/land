@@ -1,299 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
     <title>Personal landing page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d18e226e5b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d18e226e5b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="navbar">
-        <a class="homepage-link" href="#">amarell<b>.dev</b></a>
-        <ul class="navbar-ul">
-            <li><a href="#" class="navbar-link">01. About me</a></li>
-            <li><a href="#skills" class="navbar-link">02. Skills</a></li>
-            <li class="last-link"><a href="#projects" class="navbar-link">03. Projects</a></li>
-            <li id="switch-theme-button" class="navbar-link">
-                Switch theme
-                <i id="light-icon" class="far fa-moon"></i>
-            </li>
-        </ul>
+      <a class="homepage-link" href="#">amarell<b>.dev</b></a>
+      <ul class="navbar-ul">
+        <li><a href="#" class="navbar-link">01. About me</a></li>
+        <li><a href="#skills" class="navbar-link">02. Skills</a></li>
+        <li class="last-link">
+          <a href="#projects" class="navbar-link">03. Projects</a>
+        </li>
+        <li id="switch-theme-button" class="navbar-link">
+          Switch theme
+          <i id="light-icon" class="far fa-moon"></i>
+        </li>
+      </ul>
     </div>
 
     <div class="small-screen-navbar">
-        <a class="homepage-link" href="#">amarell<b>.dev</b></a>
+      <a class="homepage-link" href="#">amarell<b>.dev</b></a>
 
-        <ul class="ss-navbar-ul">
-            <li><a href="#" class="navbar-link">01.</a></li>
-            <li><a href="#ss-skills" class="navbar-link">02.</a></li>
-            <li class="last-link"><a href="#ss-projects" class="navbar-link">03.</a></li>
-            <li id="switch-theme-button-small">
-                <i id="light-icon-small" class="fas fa-moon"></i>
-            </li>
-        </ul>
+      <ul class="ss-navbar-ul">
+        <li><a href="#" class="navbar-link">01.</a></li>
+        <li><a href="#ss-skills" class="navbar-link">02.</a></li>
+        <li class="last-link">
+          <a href="#ss-projects" class="navbar-link">03.</a>
+        </li>
+        <li id="switch-theme-button-small">
+          <i id="light-icon-small" class="fas fa-moon"></i>
+        </li>
+      </ul>
     </div>
 
     <div class="small-screen-content">
-        <div class="ss-main-container">
-            <div class="ss-about-me">
-                <div>
-                    <div class="ss-intro">
-                        <h4>Hi everyone, my name is</h4>
-                        <h1 id="ss-typing-animation">Amar Mujagić.</h1>
-                        <h2>I like coding.</h2>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <h2>01. About me:</h2>
-                    <p class="ss-about-me-p">
-                        I was born in Bihać. I'm 22 years old 
-                        and I'm a third-year student at the International Burch University.
-                        I'm currently residing in Sarajevo.
-                    </p>
-                    <p class="ss-about-me-p">
-                        Throughout my elementary and high-school I have developed a passion
-                        for programming and computer science and I've been programming ever since.
-                        Right now, my main aspiration is to become a great full-stack developer.
-                    </p>
-                    <p class="ss-about-me-p">
-                        In my free time I like playing games, reading, watching movies/TV
-                         shows, taking long walks and enjoying the nature etc. 
-                    </p>
-                </div>
+      <div class="ss-main-container">
+        <div class="ss-about-me">
+          <div>
+            <div class="ss-intro">
+              <h4>Hi everyone, my name is</h4>
+              <h1 id="ss-typing-animation">Amar Mujagić.</h1>
+              <h2>I like coding.</h2>
             </div>
-            <div id="ss-skills"></div>
-            <div class="ss-skills">
-                <div class="ss-actual-skills">
-                    <h2 class="ss-skills-header">02. What are my skills?</h2>
-                    <div class="ss-programming-languages ss-skill">
-                        <div class="ss-programming-lang-i"> { ... } </div>
-                        <h2>Programming languages</h2>
-                        <p class="ss-skill-paragraph">I have worked with a variety of programming languages including:</p>
-                        <ul class="ss-programming-languages-ul">
-                            <li>Java  </li>
-                            <li>JavaScript </li>
-                            <li>Python </li>
-                            <li>PHP </li>
-                            <li>C</li>
-                        </ul>
-                        <br>
-                        <br>
-                    </div>
-                    <div class="ss-frontend ss-skill">
-                        <i class="fas fa-laptop-code"></i>
-                        <h2>Front-end development</h2>
-                        <p class="ss-skill-paragraph">
-                            I've had the chance to learn and use some of 
-                            the popular frontend libraries and frameworks
-                            by working on my personal projects. Some of them
-                            include:
-                        </p>
-
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>React.js</li>
-                            <li>Boostrap</li>
-                        </ul>
-
-                        <br>
-                        <br>
-                    </div>
-                    <div class="ss-database ss-skill">
-                        <i class="fas fa-database"></i>
-                        <h2>Databases</h2>
-                        <p class="ss-skill-paragraph">
-                            I use these databases regularly:
-                        </p>
-
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>SQL</li>
-                            <li>Firebase</li>
-                        </ul>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
-
-            <div id="ss-projects"></div>
-            <div class="ss-projects">
-                
-
-                <div class="ss-projects-container">
-                    <h2 class="ss-projects-header">03. My projects:</h2>
-                </div>
-            </div>
-
-            <div class="ss-contact">
-                <h2>04. Contact:</h2>
-                <ul class="ss-contact-list">
-                    <li>
-                        <span>email</span> : mujagicamar@gmail.com
-                    </li>
-                    <li>
-                        <span>phone_number</span> : +387 62 000 615
-                    </li>
-                    <li>
-                        <span>instagram</span> : @amarov_ig
-                    </li>
-                </ul>
-            </div>
-
+            <br />
+            <br />
+            <br />
+            <h2>01. About me:</h2>
+            <p class="ss-about-me-p">
+              I was born in Bihać. I'm 22 years old and I'm a third-year student
+              at the International Burch University. I'm currently residing in
+              Sarajevo.
+            </p>
+            <p class="ss-about-me-p">
+              Throughout my elementary and high-school I have developed a
+              passion for programming and computer science and I've been
+              programming ever since. Right now, my main aspiration is to become
+              a great full-stack developer.
+            </p>
+            <p class="ss-about-me-p">
+              In my free time I like playing games, reading, watching movies/TV
+              shows, taking long walks and enjoying the nature etc.
+            </p>
+          </div>
         </div>
+        <div id="ss-skills"></div>
+        <div class="ss-skills">
+          <div class="ss-actual-skills">
+            <h2 class="ss-skills-header">02. What are my skills?</h2>
+            <div class="ss-programming-languages ss-skill">
+              <div class="ss-programming-lang-i">{ ... }</div>
+              <h2>Programming languages</h2>
+              <p class="ss-skill-paragraph">
+                I have worked with a variety of programming languages including:
+              </p>
+              <ul class="ss-programming-languages-ul">
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>C</li>
+              </ul>
+              <br />
+              <br />
+            </div>
+            <div class="ss-frontend ss-skill">
+              <i class="fas fa-laptop-code"></i>
+              <h2>Front-end development</h2>
+              <p class="ss-skill-paragraph">
+                I've had the chance to learn and use some of the popular
+                frontend libraries and frameworks by working on my personal
+                projects. Some of them include:
+              </p>
+
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React.js</li>
+                <li>Boostrap</li>
+              </ul>
+
+              <br />
+              <br />
+            </div>
+            <div class="ss-database ss-skill">
+              <i class="fas fa-database"></i>
+              <h2>Databases</h2>
+              <p class="ss-skill-paragraph">I use these databases regularly:</p>
+
+              <ul>
+                <li>MongoDB</li>
+                <li>SQL</li>
+                <li>Firebase</li>
+              </ul>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <div id="ss-projects"></div>
+        <div class="ss-projects">
+          <div class="ss-projects-container">
+            <h2 class="ss-projects-header">03. My projects:</h2>
+          </div>
+        </div>
+
+        <div class="ss-contact">
+          <h2>04. Contact:</h2>
+          <ul class="ss-contact-list">
+            <li><span>email</span> : mujagicamar@gmail.com</li>
+            <li><span>phone_number</span> : +387 62 000 615</li>
+            <li><span>instagram</span> : @amarov_ig</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="content">
-        <div class="sidebar">
-            <a target="_blank" href="https://www.instagram.com/amarov_ig/" class="fa fa-instagram"></a>
-            <a target="_blank" href="https://github.com/amarell" class="fa fa-github"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/amar-mujagi%C4%87-83b699210/" class="fa fa-linkedin"></a>
-            <a target="_blank" href="https://open.spotify.com/user/3wylxy3kqv8hjrheydjcdz8lm?si=fcdd7814e2494d36" class="fa fa-spotify"></a>
-            <div class="vl"></div>
-            <div class="circle"></div>
+      <div class="sidebar">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/amarov_ig/"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          target="_blank"
+          href="https://github.com/amarell"
+          class="fa fa-github"
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/amar-mujagi%C4%87-83b699210/"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          target="_blank"
+          href="https://open.spotify.com/user/3wylxy3kqv8hjrheydjcdz8lm?si=fcdd7814e2494d36"
+          class="fa fa-spotify"
+        ></a>
+        <div class="vl"></div>
+        <div class="circle"></div>
+      </div>
+
+      <div class="main-container">
+        <div class="about-me">
+          <div>
+            <div class="intro">
+              <h4>Hi everyone, my name is</h4>
+              <h1 id="typing-animation">Amar Mujagić.</h1>
+              <h2>I like coding.</h2>
+            </div>
+            <br />
+            <br />
+            <br />
+            <h2>01. About me:</h2>
+            <p class="about-me-p">
+              I was born in Bihać. I'm 22 years old and I'm a third-year student
+              at the International Burch University. I'm currently residing in
+              Sarajevo.
+            </p>
+            <p class="about-me-p">
+              Throughout my elementary and high-school I have developed a
+              passion for programming and computer science and I've been
+              programming ever since. Right now, my main aspiration is to become
+              a great full-stack developer.
+            </p>
+            <p class="about-me-p">
+              In my free time I like playing games, reading, watching movies/TV
+              shows, taking long walks and enjoying the nature etc.
+            </p>
+          </div>
         </div>
 
-        <div class="main-container">
-            <div class="about-me">
-                <div>
-                    <div class="intro">
-                        <h4>Hi everyone, my name is</h4>
-                        <h1 id="typing-animation">Amar Mujagić.</h1>
-                        <h2>I like coding.</h2>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <h2>01. About me:</h2>
-                    <p class="about-me-p">
-                        I was born in Bihać. I'm 22 years old 
-                        and I'm a third-year student at the International Burch University.
-                        I'm currently residing in Sarajevo.
-                    </p>
-                    <p class="about-me-p">
-                        Throughout my elementary and high-school I have developed a passion
-                        for programming and computer science and I've been programming ever since.
-                        Right now, my main aspiration is to become a great full-stack developer.
-                    </p>
-                    <p class="about-me-p">
-                        In my free time I like playing games, reading, watching movies/TV
-                         shows, taking long walks and enjoying the nature etc. 
-                    </p>
-                </div>
+        <div id="skills" class="gap-with-the-height-of-navbar"></div>
+
+        <div class="skills">
+          <div class="skills-header">
+            <h2>02. What are my skills?</h2>
+          </div>
+
+          <div class="actual-skills">
+            <div class="programming-languages skill">
+              <div class="programming-lang-i">{ ... }</div>
+              <h2>Programming languages</h2>
+              <p class="skill-paragraph">
+                I have worked with a variety of programming languages including:
+              </p>
+              <ul class="programming-languages-ul">
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>C</li>
+              </ul>
+
+              <br />
+              <br />
             </div>
+            <div class="frontend skill">
+              <i class="fas fa-laptop-code"></i>
+              <h2>Front-end development</h2>
+              <p class="skill-paragraph">
+                I've had the chance to learn and use some of the popular
+                frontend libraries and frameworks by working on my personal
+                projects. Some of them include:
+              </p>
 
-            <div id="skills" class="gap-with-the-height-of-navbar"></div>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React.js</li>
+                <li>Boostrap</li>
+              </ul>
 
-            <div class="skills">
-                <div class="skills-header">
-                    <h2>02. What are my skills?</h2>
-                </div>
-
-                <div class="actual-skills">
-                    <div class="programming-languages skill">
-                        <div class="programming-lang-i"> { ... } </div>
-                        <h2>Programming languages</h2>
-                        <p class="skill-paragraph">I have worked with a variety of programming languages including:</p>
-                        <ul class="programming-languages-ul">
-                            <li>Java  </li>
-                            <li>JavaScript </li>
-                            <li>Python </li>
-                            <li>PHP </li>
-                            <li>C</li>
-                        </ul>
-
-                        <br>
-                        <br>
-                    </div>
-                    <div class="frontend skill">
-                        <i class="fas fa-laptop-code"></i>
-                        <h2>Front-end development</h2>
-                        <p class="skill-paragraph">
-                            I've had the chance to learn and use some of 
-                            the popular frontend libraries and frameworks
-                            by working on my personal projects. Some of them
-                            include:
-                        </p>
-
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>React.js</li>
-                            <li>Boostrap</li>
-                        </ul>
-
-                        <br>
-                        <br>
-                    </div>
-                    <div class="database skill">
-                        <i class="fas fa-database"></i>
-                        <h2>Databases</h2>
-                        <p class="skill-paragraph">
-                            I use these databases regularly:
-                        </p>
-
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>SQL</li>
-                            <li>Firebase</li>
-                        </ul>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-                
+              <br />
+              <br />
             </div>
+            <div class="database skill">
+              <i class="fas fa-database"></i>
+              <h2>Databases</h2>
+              <p class="skill-paragraph">I use these databases regularly:</p>
 
-
-            <div id="projects" class="gap-with-the-height-of-navbar"></div>
-            <div class="projects">
-                <div class="projects-header">
-                    <h2>03. My projects:</h2>
-                </div>
-
-                <div class="projects-container">
-                </div>
+              <ul>
+                <li>MongoDB</li>
+                <li>SQL</li>
+                <li>Firebase</li>
+              </ul>
+              <br />
+              <br />
             </div>
-
-            <div id="contact"></div>
-
-            <div class="contact">
-                <h2>04. Contact:</h2>
-                <ul class="contact-list">
-                    <li>
-                        <span>email</span> : mujagicamar@gmail.com
-                    </li>
-                    <li>
-                        <span>phone_number</span> : +387 62 000 615
-                    </li>
-                    <li>
-                        <span>instagram</span> : @amarov_ig
-                    </li>
-                </ul>
-            </div>
+          </div>
         </div>
+
+        <div id="projects" class="gap-with-the-height-of-navbar"></div>
+        <div class="projects">
+          <div class="projects-header">
+            <h2>03. My projects:</h2>
+          </div>
+
+          <div class="projects-container"></div>
+        </div>
+
+        <div id="contact"></div>
+
+        <div class="contact">
+          <h2>04. Contact:</h2>
+          <ul class="contact-list">
+            <li><span>email</span> : mujagicamar@gmail.com</li>
+            <li><span>phone_number</span> : +387 62 000 615</li>
+            <li><span>instagram</span> : @amarov_ig</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
-        <h3>Made by <a href="https://github.com/amarell">@amarell</a></h3>
-        <div class="footer-links">
-            <a target="_blank" href="https://www.instagram.com/amarov_ig/" class="fa fa-instagram"></a>
-            <a target="_blank" href="https://github.com/amarell" class="fa fa-github"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/amar-mujagi%C4%87-83b699210/" class="fa fa-linkedin"></a>
-            <a target="_blank" href="https://open.spotify.com/user/3wylxy3kqv8hjrheydjcdz8lm?si=fcdd7814e2494d36" class="fa fa-spotify"></a>
-        </div>
-        
+      <h3>Made by <a href="https://github.com/amarell">@amarell</a></h3>
+      <div class="footer-links">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/amarov_ig/"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          target="_blank"
+          href="https://github.com/amarell"
+          class="fa fa-github"
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/amar-mujagi%C4%87-83b699210/"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          target="_blank"
+          href="https://open.spotify.com/user/3wylxy3kqv8hjrheydjcdz8lm?si=fcdd7814e2494d36"
+          class="fa fa-spotify"
+        ></a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
